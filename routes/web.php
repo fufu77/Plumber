@@ -1,5 +1,7 @@
 <?php
 
+use RealRashid\SweetAlert\Facades\Alert;
+//Use Alert;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,4 +23,8 @@ Route::get('registration', 'AuthController@registration')->name('registration');
 Route::post('post-registration', 'AuthController@postRegistration')->name('post.registration');
 Route::get('dashboard', 'AuthController@welcome')->middleware('auth')->name('dashboard');
 Route::get('logout', 'AuthController@logout')->name('logout');
-
+//test sweetalert
+Route::get('/welcome', function () {
+    toast('Success Toast','success');
+    return view('welcome');
+});

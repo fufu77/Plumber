@@ -17,12 +17,12 @@ class CreateLoginTest extends DuskTestCase
     {
         $this->browse(function (Browser $browser) {
             $browser->visit('http://greynia.ddns.net')
-                    ->WaitForText('Login Account')
-                    ->type('email','irene99@gmail.com')
-                    ->type('password','irenechu99')
-                    ->press('login')
-                    ->WaitForText('首頁')
-                    ->assertSee('首頁');
+                ->WaitForText('Login Account', 1)
+                ->type('email', 'irene99@gmail.com')
+                ->type('password', 'irenechu99')
+                ->press('login')
+                ->WaitForText('首頁')
+                ->assertSee('首頁');
         });
     }
 }
