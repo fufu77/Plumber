@@ -13,18 +13,19 @@ use RealRashid\SweetAlert\Facades\Alert;
 |
 */
 
-Route::get('/', function () {
-    return view('login');
-});
+//Route::get('/', function () {
+//    return view('login');
+//});
 
 Route::get('login', 'AuthController@index')->name('login');
 Route::post('post-login', 'AuthController@postLogin')->name('post.login');
 Route::get('registration', 'AuthController@registration')->name('registration');
 Route::post('post-registration', 'AuthController@postRegistration')->name('post.registration');
-Route::get('dashboard', 'AuthController@welcome')->middleware('auth')->name('dashboard');
+Route::get('dashboard', 'AuthController@dashboard')->middleware('auth')->name('dashboard');
 Route::get('logout', 'AuthController@logout')->name('logout');
-//test sweetalert
-Route::get('/welcome', function () {
-    toast('Success Toast','success');
-    return view('welcome');
+Route::get('main', 'AuthController@main')->name('main');
+
+Route::get('/', function () {
+    \Mail::to('greynia@abc.com')->send(new \App\Mail\FirstMail);
+    return view('login');
 });

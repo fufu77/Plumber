@@ -86,4 +86,5 @@ composer require --dev laravel/dusk
 php artisan dusk:install
 php artisan dusk:make XXX(可建立Selenium測試案例)
 php artisan dusk指令可跑測試
+記得將原先的exampletest檔案刪除(在tests/Browser裡面)
 ```
