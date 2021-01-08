@@ -25,6 +25,15 @@ Route::get('dashboard', 'AuthController@dashboard')->middleware('auth')->name('d
 Route::get('logout', 'AuthController@logout')->name('logout');
 Route::get('main', 'AuthController@main')->name('main');
 
+Route::get('repair', function () {
+    return view('repair');
+})->name('repair');
+
+Route::post('repair', function () {
+    return redirect()->back();
+})->name('repair:new');
+
+
 Route::get('/', function () {
     \Mail::to('greynia@abc.com')->send(new \App\Mail\FirstMail);
     return view('login');
