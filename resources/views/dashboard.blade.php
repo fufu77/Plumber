@@ -26,6 +26,12 @@
     <link rel="stylesheet" href="plugins/summernote/summernote-bs4.css">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <style>
+        input{
+            align-items: center;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 {{-- class="hold-transition sidebar-mini layout-fixed" class="wrapper"--}}
 <body class="hold-transition sidebar-mini layout-fixed sidebar-collapse">
@@ -871,6 +877,35 @@
     <!-- Control sidebar content goes here -->
   </aside>
   <!-- /.control-sidebar -->
+
+  <center>
+    <button>報修</button>
+  </center>
+  <!-- main page -->
+  <div style="width: 100%; text-align:center">
+    <form action="" method="POST">
+        <br>
+        <h5>報修物品</h5>
+        <label>物品型號</label><br>
+        <input type="text" id="model"><br>
+        <label>物品類型</label><br>
+        <input type="text" id="type"><br>
+        <label>狀況概述</label><br>
+        <input type="text" id="depiction"><br>
+        <label>報修者姓名</label><br>
+        <input type="text" id="user-name"><br>
+        <label>報修者聯絡電話</label><br>
+        <input type="text" id="user-phone"><br>
+        <label>報修物品地址</label><br>
+        <input type="text" id="user-address"><br>
+        <br><input type="submit">
+      </form>
+  </div>
+  <!-- /.main page -->
+
+  <div>
+    
+  </div>
 </div>
 <!-- ./wrapper -->
 @if(session('success_message'))
