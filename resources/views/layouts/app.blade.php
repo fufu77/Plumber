@@ -31,7 +31,12 @@
 
 <body class="hold-transition sidebar-mini layout-fixed sidebar-collapse">
     <div class="wrapper">
-        @include('navbar')
+        @if(Route::currentRouteName() == 'showrepairlist')
+            @include('workernavbar')
+        @endif
+        @if(Route::currentRouteName() == 'repair')
+            @include('navbar')
+        @endif
         @include('sidebar.left')
         <div class="content-wrapper">
             @yield('content')

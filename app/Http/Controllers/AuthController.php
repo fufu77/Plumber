@@ -27,6 +27,11 @@ class AuthController extends Controller
         return view('main');
     }
 
+    public function worker()
+    {
+        return view('worker');
+    }
+
     public function postLogin(Request $request)
     {
         request()->validate([
@@ -43,7 +48,7 @@ class AuthController extends Controller
         /** @var User $user */
         $user = auth()->user();
         if ($user->hasRole('maintenance worker')){
-            return redirect('main')->with('success', 'Login Success Worker');
+            return redirect('worker')->with('success', 'Login Success Worker');
         }
         if (!$user->hasRole('admin')) {
             return redirect('main')->with('success', 'Login Success');

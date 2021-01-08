@@ -13,7 +13,6 @@ class WorkerSeeder extends Seeder
     public function run()
     {
 //        factory(\App\worker::class, 3)->create();
-//
         //system manager
         User::create([
             'name' => '曹小玲',
@@ -54,7 +53,5 @@ class WorkerSeeder extends Seeder
             'email' => 'HanHan1234@gmail.com',
             'password' => bcrypt('HanHanHan'),
         ]);
-
-
     }
 }

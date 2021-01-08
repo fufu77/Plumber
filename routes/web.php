@@ -24,14 +24,26 @@ Route::post('post-registration', 'AuthController@postRegistration')->name('post.
 Route::get('dashboard', 'AuthController@dashboard')->middleware('auth')->name('dashboard');
 Route::get('logout', 'AuthController@logout')->name('logout');
 Route::get('main', 'AuthController@main')->name('main');
+Route::get('worker', 'AuthController@worker')->name('worker');
 
 Route::get('repair', function () {
     return view('repair');
 })->name('repair');
 
+
+Route::get('showrepairlist', function () {
+    return view('showrepairlist');
+})->name('showrepairlist');
+
+
 Route::post('repair', function () {
     return redirect()->back();
 })->name('repair:new');
+
+
+Route::post('showrepairlist', function () {
+    return redirect()->back();
+})->name('showrepairlist:new');
 
 
 Route::get('/', function () {
