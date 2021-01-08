@@ -3,7 +3,7 @@
 
 /**
  * A helper file for Laravel, to provide autocomplete information to your IDE
- * Generated for Laravel 6.20.6.
+ * Generated for Laravel 6.20.9.
  *
  * This file should not be included in your code, only analyzed by your IDE!
  *
@@ -6441,7 +6441,7 @@
                     /**
          * Queue a new e-mail message for sending.
          *
-         * @param \Illuminate\Contracts\Mail\Mailable $view
+         * @param \Illuminate\Contracts\Mail\Mailable|string|array $view
          * @param string|null $queue
          * @return mixed 
          * @throws \InvalidArgumentException
@@ -8323,7 +8323,6 @@
          *
          * @param array $proxies A list of trusted proxies, the string 'REMOTE_ADDR' will be replaced with $_SERVER['REMOTE_ADDR']
          * @param int $trustedHeaderSet A bit field of Request::HEADER_*, to set which headers to trust from your proxies
-         * @throws \InvalidArgumentException When $trustedHeaderSet is invalid
          * @static 
          */ 
         public static function setTrustedProxies($proxies, $trustedHeaderSet)
@@ -9004,7 +9003,6 @@
          *
          * @param bool $asResource If true, a resource will be returned
          * @return string|resource The request body content or a resource to read the body stream
-         * @throws \LogicException
          * @static 
          */ 
         public static function getContent($asResource = false)
@@ -17369,28 +17367,4 @@ namespace  {
 
 
 
-namespace Illuminate\Support {
-    /**
-     * Methods commonly used in migrations
-     *
-     * @method Fluent after(string $column) Add the after modifier
-     * @method Fluent charset(string $charset) Add the character set modifier
-     * @method Fluent collation(string $collation) Add the collation modifier
-     * @method Fluent comment(string $comment) Add comment
-     * @method Fluent default($value) Add the default modifier
-     * @method Fluent first() Select first row
-     * @method Fluent index(string $name = null) Add the in dex clause
-     * @method Fluent on(string $table) `on` of a foreign key
-     * @method Fluent onDelete(string $action) `on delete` of a foreign key
-     * @method Fluent onUpdate(string $action) `on update` of a foreign key
-     * @method Fluent primary() Add the primary key modifier
-     * @method Fluent references(string $column) `references` of a foreign key
-     * @method Fluent nullable(bool $value = true) Add the nullable modifier
-     * @method Fluent unique(string $name = null) Add unique index clause
-     * @method Fluent unsigned() Add the unsigned modifier
-     * @method Fluent useCurrent() Add the default timestamp value
-     * @method Fluent change() Add the change modifier
-     */
-    class Fluent {}
-}
 
