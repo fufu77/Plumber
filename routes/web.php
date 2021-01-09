@@ -30,13 +30,60 @@ Route::get('repair', function () {
     return view('repair');
 })->name('repair');
 
+Route::get('repairlist', function () {
+    return view('repairlist', ['items' => [
+        [
+            'title' => '印表機',
+            'sub' => 'HP M632 不能印黑白',
+            'time' => '10 minutes ago',
+            'place' => '台中西屯區',
+        ],
+        [
+            'title' => '電視機',
+            'sub' => '沒有聲音',
+            'time' => '1 days ago',
+            'place' => '台中北屯區',
+        ],
+        [
+            'title' => '投影機',
+            'sub' => '沒有畫面',
+            'time' => '5 days ago',
+            'place' => '台中西屯區',
+        ],
+    ]]);
+})->name('repairlist');
+
+Route::get('repairlist/{id}', function ($id) {
+    $array = [
+        [
+            'title' => '印表機',
+            'sub' => 'HP M632 不能印黑白',
+            'time' => '10 minutes ago',
+            'place' => '台中西屯區',
+        ],
+        [
+            'title' => '電視機',
+            'sub' => '沒有聲音',
+            'time' => '1 days ago',
+            'place' => '台中北屯區',
+        ],
+        [
+            'title' => '投影機',
+            'sub' => '沒有畫面',
+            'time' => '5 days ago',
+            'place' => '台中西屯區',
+        ],
+    ];
+
+    return view('userrepairlist', ['array' => $array[$id]]);
+})->name('userrepairlist');
 
 Route::get('showrepairlist', function () {
     return view('showrepairlist');
 })->name('showrepairlist');
 
 
-Route::post('repair', function () {
+Route::post('userrepairlist', function () {
     return redirect()->back();
 })->name('repair:new');
 
