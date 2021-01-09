@@ -13,6 +13,10 @@
                 <a class="{{ Route::currentRouteName() == 'repair' ? 'active' : '' }} nav-link"
                     href="{{ route('repair') }}">報修</a>
             </li>
+            <li class="nav-item">
+                <a class="{{ Route::currentRouteName() == 'repairlist' ? 'active' : '' }} nav-link"
+                    href="{{ route('repairlist') }}">報修紀錄</a>
+            </li>
             <li class="nav-item d-none d-sm-inline-block">
                 <a href="{{ route('logout') }}" class="nav-link">登出</a>
             </li>
@@ -42,7 +46,7 @@
                     <a href="#" class="dropdown-item">
                         <!-- Message Start -->
                         <div class="media">
-                            <img src="dist/img/photos/photo_2020-12-14_01-16-23.jpg" alt="User Avatar"
+                            <img src="/dist/img/photos/photo_2020-12-14_01-16-23.jpg" alt="User Avatar"
                                 class="img-size-50 mr-3 img-circle">
                             <div class="media-body">
                                 <h3 class="dropdown-item-title">
@@ -59,7 +63,7 @@
                     <a href="#" class="dropdown-item">
                         <!-- Message Start -->
                         <div class="media">
-                            <img src="dist/img/photos/photo_2020-12-14_01-16-23.jpg" alt="User Avatar"
+                            <img src="/dist/img/photos/photo_2020-12-14_01-16-23.jpg" alt="User Avatar"
                                 class="img-size-50 img-circle mr-3">
                             <div class="media-body">
                                 <h3 class="dropdown-item-title">
@@ -76,7 +80,7 @@
                     <a href="#" class="dropdown-item">
                         <!-- Message Start -->
                         <div class="media">
-                            <img src="dist/img/photos/photo_2020-12-14_01-16-23.jpg" alt="User Avatar"
+                            <img src="/dist/img/photos/photo_2020-12-14_01-16-23.jpg" alt="User Avatar"
                                 class="img-size-50 img-circle mr-3">
                             <div class="media-body">
                                 <h3 class="dropdown-item-title">
