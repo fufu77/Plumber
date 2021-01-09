@@ -18,7 +18,7 @@
     <!-- JQVMap -->
     <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="/dist/css/adminlte.min.css">
     <!-- overlayScrollbars -->
     <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
     <!-- Daterange picker -->
@@ -43,7 +43,7 @@ class="wrapper"--}}
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             {{-- <a href="#" class="brand-link">--}}
-                {{-- <img src="dist/img/photos/photo_2020-12-14_01-16-23.jpg"
+                {{-- <img src="/dist/img/photos/photo_2020-12-14_01-16-23.jpg"
                     alt="AdminLTE Logo" class="brand-image img-circle elevation-3" --}}
                     {{-- style="opacity: .8">--}}
                 {{-- <span
@@ -55,7 +55,7 @@ class="wrapper"--}}
                 <!-- Sidebar user panel (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
-                        <img src="dist/img/photos/photo_2020-12-14_01-16-23.jpg" class="img-circle elevation-2"
+                        <img src="/dist/img/photos/photo_2020-12-14_01-16-23.jpg" class="img-circle elevation-2"
                             alt="User Image">
                     </div>
                     <div class="info">
@@ -390,7 +390,7 @@ class="wrapper"--}}
                                             {{--
                                             <!-- /.direct-chat-infos -->--}}
                                             {{-- <img class="direct-chat-img"
-                                                src="dist/img/photos/photo_2020-12-14_01-16-23.jpg"
+                                                src="/dist/img/photos/photo_2020-12-14_01-16-23.jpg"
                                                 alt="message user image">--}}
                                             {{--
                                             <!-- /.direct-chat-img -->--}}
@@ -424,7 +424,7 @@ class="wrapper"--}}
                                             {{--
                                             <!-- /.direct-chat-infos -->--}}
                                             {{-- <img class="direct-chat-img"
-                                                src="dist/img/photos/photo_2020-12-14_01-16-23.jpg"
+                                                src="/dist/img/photos/photo_2020-12-14_01-16-23.jpg"
                                                 alt="message user image">--}}
                                             {{--
                                             <!-- /.direct-chat-img -->--}}
@@ -458,7 +458,7 @@ class="wrapper"--}}
                                             {{--
                                             <!-- /.direct-chat-infos -->--}}
                                             {{-- <img class="direct-chat-img"
-                                                src="dist/img/photos/photo_2020-12-14_01-16-23.jpg"
+                                                src="/dist/img/photos/photo_2020-12-14_01-16-23.jpg"
                                                 alt="message user image">--}}
                                             {{--
                                             <!-- /.direct-chat-img -->--}}
@@ -492,7 +492,7 @@ class="wrapper"--}}
                                             {{--
                                             <!-- /.direct-chat-infos -->--}}
                                             {{-- <img class="direct-chat-img"
-                                                src="dist/img/photos/photo_2020-12-14_01-16-23.jpg"
+                                                src="/dist/img/photos/photo_2020-12-14_01-16-23.jpg"
                                                 alt="message user image">--}}
                                             {{--
                                             <!-- /.direct-chat-img -->--}}
@@ -524,7 +524,7 @@ class="wrapper"--}}
                                                 {{-- <a
                                                     href="#">--}}
                                                     {{-- <img class="contacts-list-img"
-                                                        src="dist/img/user1-128x128.jpg">--}}
+                                                        src="/dist/img/user1-128x128.jpg">--}}
 
                                                     {{-- <div class="contacts-list-info">
                                                         --}}
@@ -552,7 +552,7 @@ class="wrapper"--}}
                                                 {{-- <a
                                                     href="#">--}}
                                                     {{-- <img class="contacts-list-img"
-                                                        src="dist/img/user7-128x128.jpg">--}}
+                                                        src="/dist/img/user7-128x128.jpg">--}}
 
                                                     {{-- <div class="contacts-list-info">
                                                         --}}
@@ -580,7 +580,7 @@ class="wrapper"--}}
                                                 {{-- <a
                                                     href="#">--}}
                                                     {{-- <img class="contacts-list-img"
-                                                        src="dist/img/user3-128x128.jpg">--}}
+                                                        src="/dist/img/user3-128x128.jpg">--}}
 
                                                     {{-- <div class="contacts-list-info">
                                                         --}}
@@ -608,7 +608,7 @@ class="wrapper"--}}
                                                 {{-- <a
                                                     href="#">--}}
                                                     {{-- <img class="contacts-list-img"
-                                                        src="dist/img/user5-128x128.jpg">--}}
+                                                        src="/dist/img/user5-128x128.jpg">--}}
 
                                                     {{-- <div class="contacts-list-info">
                                                         --}}
@@ -636,7 +636,7 @@ class="wrapper"--}}
                                                 {{-- <a
                                                     href="#">--}}
                                                     {{-- <img class="contacts-list-img"
-                                                        src="dist/img/user6-128x128.jpg">--}}
+                                                        src="/dist/img/user6-128x128.jpg">--}}
 
                                                     {{-- <div class="contacts-list-info">
                                                         --}}
@@ -664,7 +664,7 @@ class="wrapper"--}}
                                                 {{-- <a
                                                     href="#">--}}
                                                     {{-- <img class="contacts-list-img"
-                                                        src="dist/img/user8-128x128.jpg">--}}
+                                                        src="/dist/img/user8-128x128.jpg">--}}
 
                                                     {{-- <div class="contacts-list-info">
                                                         --}}
@@ -1285,11 +1285,11 @@ class="wrapper"--}}
     <!-- overlayScrollbars -->
     <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="dist/js/adminlte.js"></script>
+    <script src="/dist/js/adminlte.js"></script>
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-    <script src="dist/js/pages/dashboard.js"></script>
+    <script src="/dist/js/pages/dashboard.js"></script>
     <!-- AdminLTE for demo purposes -->
-    <script src="dist/js/demo.js"></script>
+    <script src="/dist/js/demo.js"></script>
 
     @include('sweetalert::alert')
 </body>

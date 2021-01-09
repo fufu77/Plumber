@@ -2,7 +2,7 @@
     <div class="sidebar">
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
-                <img src="dist/img/photos/photo_2020-12-14_01-16-23.jpg" class="img-circle elevation-2"
+                <img src="/dist/img/photos/photo_2020-12-14_01-16-23.jpg" class="img-circle elevation-2"
                     alt="User Image">
             </div>
             <div class="info">
