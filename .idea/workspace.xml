@@ -28,16 +28,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6755cbf8-003f-44dd-b66a-a524091c07e4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/showrepairlist.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/worker.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/workernavbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/WorkerSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/WorkerSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/showrepairlist.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/showrepairlist.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/workernavbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/workernavbar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -284,12 +277,12 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1097" y="623" key="NewPhpFileDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1608826938983" />
-    <state x="708" y="234" width="1008" height="505" key="search.everywhere.popup" timestamp="1608885366141">
+    <state x="708" y="234" width="1008" height="505" key="search.everywhere.popup" timestamp="1610191620872">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="472" y="171" width="672" height="369" key="search.everywhere.popup/0.0.1280.760@0.0.1280.760" timestamp="1608881040124" />
-    <state x="708" y="234" width="1008" height="505" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608885366141" />
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1608818924604" />
+    <state x="708" y="234" width="1008" height="505" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1610191620872" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1610181313458" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -32,7 +32,26 @@ Route::get('repair', function () {
 
 
 Route::get('showrepairlist', function () {
-    return view('showrepairlist');
+    return view('showrepairlist',['items' => [
+        [
+            'title' => '朱小玲',
+            'time' => '1 week ago',
+            'sub' => '冷氣壞掉，常常發出不明的聲音還有奇怪的味道',
+            'dis' => '中大型電器',
+        ],
+        [
+            'title' => '張小瑋',
+            'time' => '3 days ago',
+            'sub' => '淨水器似乎沒有正常的淨水',
+            'dis' => '小型電器',
+        ],
+        [
+            'title' => '陳小民',
+            'time' => '2 hours ago',
+            'sub' => '洗衣機發出極大的聲響，常常在奇怪的時間停止',
+            'dis' => '大型電器',
+        ],
+    ]]);
 })->name('showrepairlist');
 
 
@@ -40,10 +59,10 @@ Route::post('repair', function () {
     return redirect()->back();
 })->name('repair:new');
 
-
-Route::post('showrepairlist', function () {
-    return redirect()->back();
-})->name('showrepairlist:new');
+//
+//Route::post('showrepairlist', function () {
+//    return redirect()->back();
+//})->name('showrepairlist:new');
 
 
 Route::get('/', function () {

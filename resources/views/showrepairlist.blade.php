@@ -15,35 +15,28 @@
             <div class="row">
                 <div class="col-12">
                     <!-- main page -->
-                    <form action="{{ route('repair:new') }}" method="POST">
-                        @csrf
-                        <div class="mb-3">
-                            <label class="form-label">物品型號</label>
-                            <input type="text" id="model" class="form-control">
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">物品類型</label>
-                            <input type="text" id="type" class="form-control">
-                        </div>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-dark"
+                           aria-current="true">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">維修列表</h5>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-group">
+                        @foreach ($items as $item)
+                            <a href={{ route('login') }} class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">{{ $item['title'] }}</h5>
+                                <small>{{ $item['time'] }}</small>
+                            </div>
+                            <p class="mb-1">{{ $item['sub'] }}</p>
+                            <small>{{ $item['dis'] }}</small>
+                            </a>
+                        @endforeach
+                    </div>
 
-                        <div class="mb-3">
-                            <label class="form-label">狀況概述</label>
-                            <input type="text" id="depiction" class="form-control">
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">報修者姓名</label>
-                            <input type="text" id="user-name" class="form-control">
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">報修者聯絡電話</label>
-                            <input type="text" id="user-phone" class="form-control">
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">報修物品地址</label>
-                            <input type="text" id="user-address" class="form-control">
-                        </div>
-                        <button type="submit" class="btn btn-success">提交</button>
-                    </form>
+
                     <!-- /.main page -->
                 </div>
             </div>

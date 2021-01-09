@@ -9,12 +9,6 @@
             <a href="{{ route('worker') }}"
                class="{{ Route::currentRouteName() == 'worker' ? 'active' : '' }} nav-link">首頁</a>
         </li>
-{{--        @if(Route::currentRouteName() == 'worker')--}}
-{{--            <li class="nav-item">--}}
-{{--                <a class="{{ Route::currentRouteName() == 'showrepairlist' ? 'active' : '' }} nav-link"--}}
-{{--                   href="{{ route('showrepairlist') }}">報修列表</a>--}}
-{{--            </li>--}}
-{{--        @endif--}}
         <li class="nav-item">
             <a class="{{ Route::currentRouteName() == 'showrepairlist' ? 'active' : '' }} nav-link"
                href="{{ route('showrepairlist') }}">報修列表</a>
