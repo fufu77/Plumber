@@ -24,14 +24,14 @@
                         </a>
                     </div>
                     <div class="list-group">
-                        @foreach ($items as $item)
-                            <a href={{ route('login') }} class="list-group-item list-group-item-action">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">{{ $item['title'] }}</h5>
-                                <small>{{ $item['time'] }}</small>
-                            </div>
-                            <p class="mb-1">{{ $item['sub'] }}</p>
-                            <small>{{ $item['dis'] }}</small>
+                        @foreach ($items as $index =>$item)
+                            <a href={{ route('listdetail', $index) }} class="list-group-item list-group-item-action">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">{{ $item['title'] }}</h5>
+                                    <small>{{ $item['time'] }}</small>
+                                </div>
+                                <p class="mb-1">{{ $item['sub'] }}</p>
+                                <small>{{ $item['dis'] }}</small>
                             </a>
                         @endforeach
                     </div>

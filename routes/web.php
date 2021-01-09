@@ -33,50 +33,104 @@ Route::get('repair', function () {
 Route::get('repairlist', function () {
     return view('repairlist', ['items' => [
         [
-            'title' => '印表機',
-            'sub' => 'HP M632 不能印黑白',
-            'time' => '10 minutes ago',
+            'title' => '冷氣',
+            'sub' => '冷氣壞掉，常常發出不明的聲音還有奇怪的味道',
+            'time' => '1 week ago',
+            'name' => '朱小玲',
+            'type' => '中大型電器',
+            'phone' => '0900000000',
             'place' => '台中西屯區',
         ],
         [
-            'title' => '電視機',
-            'sub' => '沒有聲音',
-            'time' => '1 days ago',
+            'title' => '淨水器',
+            'sub' => '淨水器似乎沒有正常的淨水',
+            'time' => '3 days ago',
+            'name' => '張小瑋',
+            'type' => '小型電器',
+            'phone' => '0900000000',
             'place' => '台中北屯區',
         ],
         [
-            'title' => '投影機',
-            'sub' => '沒有畫面',
-            'time' => '5 days ago',
+            'title' => '洗衣機',
+            'sub' => '洗衣機發出極大的聲響，常常在奇怪的時間停止',
+            'time' => '2 hours ago',
+            'name' => '陳小民',
+            'type' => '大型電器',
+            'phone' => '0900000000',
             'place' => '台中西屯區',
         ],
+
     ]]);
 })->name('repairlist');
 
 Route::get('repairlist/{id}', function ($id) {
     $array = [
         [
-            'title' => '印表機',
-            'sub' => 'HP M632 不能印黑白',
-            'time' => '10 minutes ago',
+            'title' => '冷氣',
+            'sub' => '冷氣壞掉，常常發出不明的聲音還有奇怪的味道',
+            'time' => '1 week ago',
+            'name' => '朱小玲',
+            'type' => '中大型電器',
+            'phone' => '0900000000',
             'place' => '台中西屯區',
         ],
         [
-            'title' => '電視機',
-            'sub' => '沒有聲音',
-            'time' => '1 days ago',
+            'title' => '淨水器',
+            'sub' => '淨水器似乎沒有正常的淨水',
+            'time' => '3 days ago',
+            'name' => '張小瑋',
+            'type' => '小型電器',
+            'phone' => '0900000000',
             'place' => '台中北屯區',
         ],
         [
-            'title' => '投影機',
-            'sub' => '沒有畫面',
-            'time' => '5 days ago',
+            'title' => '洗衣機',
+            'sub' => '洗衣機發出極大的聲響，常常在奇怪的時間停止',
+            'time' => '2 hours ago',
+            'name' => '陳小民',
+            'type' => '大型電器',
+            'phone' => '0900000000',
             'place' => '台中西屯區',
         ],
     ];
 
     return view('userrepairlist', ['array' => $array[$id]]);
 })->name('userrepairlist');
+
+Route::get('showrepairlist/{id}', function ($id) {
+    $array = [
+        [
+            'title' => '冷氣',
+            'sub' => '冷氣壞掉，常常發出不明的聲音還有奇怪的味道',
+            'time' => '1 week ago',
+            'name' => '朱小玲',
+            'type' => '中大型電器',
+            'phone' => '0900000000',
+            'place' => '台中西屯區',
+        ],
+        [
+            'title' => '淨水器',
+            'sub' => '淨水器似乎沒有正常的淨水',
+            'time' => '3 days ago',
+            'name' => '張小瑋',
+            'type' => '小型電器',
+            'phone' => '0900000000',
+            'place' => '台中北屯區',
+        ],
+        [
+            'title' => '洗衣機',
+            'sub' => '洗衣機發出極大的聲響，常常在奇怪的時間停止',
+            'time' => '2 hours ago',
+            'name' => '陳小民',
+            'type' => '大型電器',
+            'phone' => '0900000000',
+            'place' => '台中西屯區',
+        ],
+    ];
+
+    return view('listdetail', ['array' => $array[$id]]);
+})->name('listdetail');
+
 
 Route::get('showrepairlist', function () {
     return view('showrepairlist',['items' => [
@@ -106,10 +160,10 @@ Route::post('userrepairlist', function () {
     return redirect()->back();
 })->name('repair:new');
 
-//
-//Route::post('showrepairlist', function () {
-//    return redirect()->back();
-//})->name('showrepairlist:new');
+
+Route::post('listdetail', function () {
+    return redirect()->back();
+})->name('repair:new');
 
 
 Route::get('/', function () {

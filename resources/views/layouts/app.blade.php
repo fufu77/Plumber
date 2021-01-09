@@ -33,6 +33,8 @@
     <div class="wrapper">
         @switch(Route::currentRouteName())
             @case('showrepairlist')
+            @case('showrepairlist/{id}')
+            @case('listdetail')
             @include('workernavbar')
             @break
             @case('repair')
